@@ -1,10 +1,10 @@
 extends Node3D
 
 
-func _on_body_entered(body):
+func _on_area_3d_body_entered(body):
 	if body.is_in_group("jolina"):
-		print("Player Has entered Bush")
+		print("Jolina enters a bush")
 
-func _on_body_exited(body):
+func _on_area_3d_body_exited(body):
 	if body.is_in_group("jolina"):
-		print("Player exited bush")
+		print("Jolina enters a bush")
