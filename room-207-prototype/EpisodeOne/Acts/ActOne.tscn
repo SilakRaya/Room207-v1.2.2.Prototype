@@ -405,6 +405,15 @@ autoplay = true
 libraries/ = SubResource("AnimationLibrary_ekh7m")
 autoplay = &"LabelOutlineEffect"
 
+[node name="devNote" type="Label" parent="." unique_id=2030213607]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 777.0
+offset_right = 1891.0
+offset_bottom = 856.0
+theme_override_font_sizes/font_size = 58
+text = "You can switch between animation, just click the Animation Player! -ken"
+
 [connection signal="pressed" from="IntroContainer/SkipButton" to="." method="_on_skip_button_pressed"]
 [connection signal="pressed" from="MainMenuContainer/FlowContainer/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

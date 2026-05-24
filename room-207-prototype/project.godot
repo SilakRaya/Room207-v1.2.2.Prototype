@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Room207 (1.1.1)"
+config/name="Room207-1.1.16.Prototype"
 run/main_scene="uid://b1trcnyiophq4"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="uid://bga4rp07gq8wk"
@@ -19,7 +19,6 @@ config/icon="uid://bga4rp07gq8wk"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_width"
 
