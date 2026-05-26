@@ -6,6 +6,6 @@ func _ready() -> void:
 	$AnimationPlayer.play("TheInBituin")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	if anim_name == "TheInBituin":
+		get_tree().change_scene_to_file("res://Ep1-TheInBituin/Scenes/SceneA2.tscn")

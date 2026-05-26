@@ -58,31 +58,31 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("AudioStreamPlayer2D:playback_type")
+tracks/4/path = NodePath("Label:scale")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
+"update": 0,
+"values": [Vector2(1, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Label:scale")
+tracks/5/path = NodePath("Label:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
+"update": 1,
+"values": [true]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Label:visible")
+tracks/6/path = NodePath("AudioStreamPlayer2D:autoplay")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -91,10 +91,22 @@ tracks/6/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AudioStreamPlayer2D:volume_db")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_i7jle"]
 resource_name = "TheInBituin"
-length = 15.1
+length = 18.533333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -138,46 +150,73 @@ tracks/3/path = NodePath("Label:text")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(4.496667, 5.0666666, 5.6666665, 6.133333, 6.6, 7.02, 7.43, 7.633333, 7.8333335, 8.145426),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(4.496667, 5.0666666, 5.6666665, 6.133333, 6.6, 7.02, 7.43, 7.633333, 7.8333335, 8.145426, 13.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["", "room207", "episode", "1", "the", "In", "between", "b-----", "bituin", "the in bituin"]
+"values": ["", "room207", "episode", "1", "the", "In", "between", "b-----", "bituin", "the in bituin", "story by: x40Arcade"]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("AudioStreamPlayer2D:playback_type")
+tracks/4/path = NodePath("Label:scale")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(-0.23333323),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
+"times": PackedFloat32Array(8.1, 18.333334),
+"transitions": PackedFloat32Array(0.73204315, 1),
+"update": 0,
+"values": [Vector2(0.61, 0.61), Vector2(0.74, 0.74)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Label:scale")
+tracks/5/path = NodePath("Label:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(8.133333, 15.004437),
-"transitions": PackedFloat32Array(1.6817936, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.145, 1.145)]
+"times": PackedFloat32Array(0, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
 }
-tracks/6/type = "value"
+tracks/6/type = "audio"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Label:visible")
+tracks/6/path = NodePath("AudioStreamPlayer2D")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 4.5, 15.033334),
-"transitions": PackedFloat32Array(1, 1, 1),
+"clips": [{
+"end_offset": 216.31485,
+"start_offset": 0.0,
+"stream": ExtResource("1_qvm7g")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/6/use_blend = true
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AudioStreamPlayer2D:autoplay")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 15.733334),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [false, true, false]
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AudioStreamPlayer2D:volume_db")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(15.166667, 18.466667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -18.884999999999998]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k4r4u"]
@@ -202,12 +241,6 @@ metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=425490418]
 libraries/ = SubResource("AnimationLibrary_k4r4u")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1167216246]
-stream = ExtResource("1_qvm7g")
-volume_db = 5.0
-autoplay = true
-playback_type = 1
 
 [node name="SilakRayaWhite" type="Sprite2D" parent="." unique_id=1684184211]
 modulate = Color(1, 1, 1, 0)
@@ -235,3 +268,8 @@ label_settings = SubResource("LabelSettings_lf8ko")
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1173123473]
+autoplay = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
