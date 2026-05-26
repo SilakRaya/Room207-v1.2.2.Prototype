@@ -11,9 +11,12 @@ config_version=5
 [application]
 
 config/name="Room207"
-config/version="1.2.2"
+config/description="📖 About This Project Room 207 is a visual novel — our debut game as SilakRaya. Originally a rushed comic from senior high school, we're now reimagining it with the soul it always deserved. Inspired by games like Until Then, we want to create a story-driven experience that feels personal, atmospheric, and heartfelt."
+config/version="1.2.4"
 run/main_scene="uid://b1trcnyiophq4"
 config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/show_image=false
+boot_splash/use_filter=false
 config/icon="uid://bga4rp07gq8wk"
 
 [display]
@@ -32,7 +35,7 @@ project/assembly_name="Room207-Prototype"
 
 folder_colors={
 "res://Blender/": "orange",
-"res://EpisodeOne/": "yellow",
+"res://Ep1-TheInBituin/": "yellow",
 "res://Fonts/": "green",
 "res://Ost/": "pink"
 }
